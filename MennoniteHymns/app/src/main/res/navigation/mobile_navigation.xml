@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_hymns">
+
+    <fragment
+        android:id="@+id/nav_hymns"
+        android:name="com.micahstauffer.mennonitehymns.ui.home.HymnsFragment"
+        android:label="@string/menu_hymns"
+        tools:layout="@layout/fragment_hymns" />
+
+    <fragment
+        android:id="@+id/nav_music"
+        android:name="com.micahstauffer.mennonitehymns.ui.tools.MusicFragment"
+        android:label="@string/menu_music"
+        tools:layout="@layout/fragment_music" />
+<!--
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.micahstauffer.mennonitehymns.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.micahstauffer.mennonitehymns.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />-->
+</navigation>
